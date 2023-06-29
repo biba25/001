@@ -7,7 +7,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+    <link rel="manifest" href="./img/site.webmanifest">
+    <title>Абитуриент 2023 - куда поступать после 9 и 11 класса на ctudika.ru</title>
 </head>
 <body>
     <div class="wrapper">
@@ -15,6 +19,24 @@
             <header>
                 <div class="header">
                     <div class="header_cont">
+                        <div class="burger-menu_hiden">
+                            <input id="burger" type="checkbox" class="checkbox" />
+                            <label for="burger">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </label>
+                            <nav>    
+                                <ul>
+                                    <li><a href="#">Вузы</a></li>
+                                    <li><a href="#">Колледжи</a></li>
+                                    <li><a href="#">Техникумы</a></li>
+                                    <li><a href="#">Училища</a></li>
+                                    <li><a href="#">Специальности</a></li>
+                                    <li><a href="#">Отзывы</a></li>
+                                </ul>  
+                            </nav>
+                        </div>
                         <div class="logo">
                             <svg xmlns="http://www.w3.org/2000/svg" width="100" height="44" viewBox="0 0 88 24" fill="none">
                                 <path d="M7.851 17.4978H10.3601C10.1874 18.6703 9.66941 19.6114 8.80607 20.3213C7.95352 21.0313 6.86355 21.3862 5.53617 21.3862C3.7987 21.3862 2.43894 20.843 1.45689 19.7566C0.485629 18.6595 0 17.2128 0 15.4165C0 13.6202 0.491025 12.1788 1.47307 11.0924C2.45512 9.99529 3.80949 9.44672 5.53617 9.44672C6.7988 9.44672 7.851 9.77479 8.69276 10.4309C9.53451 11.0763 10.0525 11.9368 10.2468 13.0124H7.7215C7.45171 12.0659 6.72326 11.5926 5.53617 11.5926C4.54333 11.5926 3.78251 11.9529 3.25371 12.6736C2.73571 13.3835 2.47671 14.2978 2.47671 15.4165C2.47671 16.5351 2.73571 17.4548 3.25371 18.1755C3.78251 18.8854 4.54333 19.2403 5.53617 19.2403C6.1513 19.2403 6.65851 19.0897 7.05781 18.7886C7.46789 18.4766 7.73229 18.0464 7.851 17.4978Z" fill="#222222"/>
@@ -116,6 +138,16 @@
                     </svg>
                     <div class="crump">МГТУ им. Н.Э. Баумана</div>
                 </div>
+                <div class="breadcrumps_hiden">
+                    <div>
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19 22L13 16L19 10" stroke="#A7A7A7" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <div class="ex">НАЗАД</div>
+
+                       
+                </div>
                 <div class="section">
                     <div class="photo">
                         <div  class="btns">
@@ -132,7 +164,7 @@
                                         <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M8 14.0125L6.9125 13.0225C3.05 9.52 0.5 7.21 0.5 4.375C0.5 2.065 2.315 0.25 4.625 0.25C5.93 0.25 7.1825 0.8575 8 1.8175C8.8175 0.8575 10.07 0.25 11.375 0.25C13.685 0.25 15.5 2.065 15.5 4.375C15.5 7.21 12.95 9.52 9.0875 13.03L8 14.0125Z" fill="#A7A7A7"/>
                                         </svg>
-                                        В Избранное
+                                        <p class="favorites_text">В Избранное</p>
                                     </div>
                                     <div class="bell">
                                         <svg width="35" height="35" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -161,23 +193,29 @@
                                         (75 отзывов)
                                     </div>
                                 </div>
-                                <div class="point_div">
-                                    <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect width="6" height="6" rx="3" fill="#767676"/>
-                                    </svg>   
-                                </div>
-                                <div>
-                                    Москва, ул. Новочеремушкинская, д. 69
-                                </div>
-                                <div class="point_div">
-                                    <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect width="6" height="6" rx="3" fill="#767676"/>
-                                    </svg>
-                                </div>
-                                <div>
-                                    Приемная комиссия: 7 (499) 181 21 33
+                                <div class="content_block2_div2">
+                                    <div class="point_div">
+                                        <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="6" height="6" rx="3" fill="#767676"/>
+                                        </svg>   
+                                    </div>
+                                    <div class="text_div">
+                                        Москва, ул. Новочеремушкинская, д. 69
+                                    </div>
+                                    <div class="point_div">
+                                        <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="6" height="6" rx="3" fill="#767676"/>
+                                        </svg>
+                                    </div>
+                                    <div class="text_div">
+                                        Приемная комиссия: 7 (499) 181 21 33
+                                    </div>
                                 </div>
                             </div>
+                            <div class="btn_hiden">
+                                <button type="button" class="btn-light">проверить шансы поступить</button>
+                            </div>
+                            
                             <div class="content_block3">
                                 <div>
                                     Обновлено 11.11.2011
