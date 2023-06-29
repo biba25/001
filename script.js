@@ -18,3 +18,9 @@ function getinput() {
   function show() {
     document.getElementById("myDropdown").classList.toggle("show");
   }
+
+const scrollBtn = document.getElementById('scrollCaroosel');
+const toScrollMenu = document.querySelector('.caroosel__container');
+scrollBtn.addEventListener('click', () => {
+    toScrollMenu.classList.toggle('scroll')
+})
