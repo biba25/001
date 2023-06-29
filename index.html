@@ -78,17 +78,24 @@
                             </div>
                         </div>
                     </div>
-                    <div class="menu">
-                        <div class="menu_point" id="horizontal">
-                            <div>Вузы</div>
-                            <div>Колледжи</div>
-                            <div>Техникумы</div>
-                            <div>Училища</div>
-                            <div>Специальности </div> 
-                            <div>Профессии</div>
-                            <div>Отзывы </div>
-                            <div>Учебным заведениям </div>
-                            <div>Тест на профориентацию</div>
+                    <div class="menu header__container__block">
+                        <div class="caroosel" id="horizontal">
+                            <div class=" menu_point caroosel__container">
+                                <div>Вузы</div>
+                                <div>Колледжи</div>
+                                <div>Техникумы</div>
+                                <div>Училища</div>
+                                <div>Специальности </div> 
+                                <div>Профессии</div>
+                                <div>Отзывы </div>
+                                <div>Учебным заведениям </div>
+                                <div>Тест на профориентацию</div>
+                            </div>
+                            <div class="scroll-btn" id="scrollCaroosel">
+                                <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 1L7 7L1 13" stroke="#222222" stroke-linecap="round"/>
+                                </svg>  
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -116,17 +123,66 @@
                             <button type="button" class="btn btn-light">проверить шансы поступить</button>
                         </div>
                         <div class="content">
-                            <div class="text">
-                                Московский государственный технический университет имени Н.Э. Бáумана
-                            </div>
-                            <div>
-                                <div class="favorites">
-                                    <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M8 14.0125L6.9125 13.0225C3.05 9.52 0.5 7.21 0.5 4.375C0.5 2.065 2.315 0.25 4.625 0.25C5.93 0.25 7.1825 0.8575 8 1.8175C8.8175 0.8575 10.07 0.25 11.375 0.25C13.685 0.25 15.5 2.065 15.5 4.375C15.5 7.21 12.95 9.52 9.0875 13.03L8 14.0125Z" fill="#A7A7A7"/>
-                                    </svg>
-                                    В Избранное
+                            <div class="content_block">
+                                <div class="text">
+                                    Московский государственный технический университет имени Н.Э. Бáумана
                                 </div>
-                                
+                                <div class="buttons">
+                                    <div class="favorites">
+                                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8 14.0125L6.9125 13.0225C3.05 9.52 0.5 7.21 0.5 4.375C0.5 2.065 2.315 0.25 4.625 0.25C5.93 0.25 7.1825 0.8575 8 1.8175C8.8175 0.8575 10.07 0.25 11.375 0.25C13.685 0.25 15.5 2.065 15.5 4.375C15.5 7.21 12.95 9.52 9.0875 13.03L8 14.0125Z" fill="#A7A7A7"/>
+                                        </svg>
+                                        В Избранное
+                                    </div>
+                                    <div class="bell">
+                                        <svg width="35" height="35" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M22 12C22 10.4087 21.3679 8.88258 20.2426 7.75736C19.1174 6.63214 17.5913 6 16 6C14.4087 6 12.8826 6.63214 11.7574 7.75736C10.6321 8.88258 10 10.4087 10 12C10 19 7 21 7 21H25C25 21 22 19 22 12Z" stroke="#A7A7A7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M17.73 25C17.5542 25.3031 17.3019 25.5547 16.9982 25.7295C16.6946 25.9044 16.3504 25.9965 16 25.9965C15.6496 25.9965 15.3054 25.9044 15.0018 25.7295C14.6982 25.5547 14.4458 25.3031 14.27 25" stroke="#A7A7A7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>   
+                                    </div>
+                                    <div class="union">
+                                        <svg width="22" height="22" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.72536 3.14286V11H8.24168V3.14286L6.01615 5.5L5 4.48416L8.98352 0L13 4.48416L11.9509 5.5L9.72536 3.14286ZM0 8V16V17H1H17H18V16V8H16V15H2V8H0Z" fill="#A7A7A7"/>
+                                        </svg>    
+                                    </div> 
+                                </div>
+                            </div>
+                            <div class="content_block2">
+                                <div class="content_block2_div">
+                                    <div class="svg_star">
+                                        <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8 11.9525L12.635 14.75L11.405 9.4775L15.5 5.93L10.1075 5.4725L8 0.5L5.8925 5.4725L0.5 5.93L4.595 9.4775L3.365 14.75L8 11.9525Z" fill="#EFD967"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        2.4
+                                    </div>
+                                    <div>
+                                        (75 отзывов)
+                                    </div>
+                                </div>
+                                <div class="point_div">
+                                    <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="6" height="6" rx="3" fill="#767676"/>
+                                    </svg>   
+                                </div>
+                                <div>
+                                    Москва, ул. Новочеремушкинская, д. 69
+                                </div>
+                                <div class="point_div">
+                                    <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="6" height="6" rx="3" fill="#767676"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    Приемная комиссия: 7 (499) 181 21 33
+                                </div>
+                            </div>
+                            <div class="content_block3">
+                                <div>
+                                    Обновлено 11.11.2011
+                                </div>
+                                <button type="button" class="btn-text">Сообщить об ошибке</button>
                             </div>
                         </div>
 
@@ -134,7 +190,53 @@
                 </div>
             </section>
             <footer>
-                <div class="footer"></div>
+                <div class="footer">
+                    <div class="footer_block">
+                        <div class="footer_block_content">
+                            <div class="min_text">Основная информация</div>
+                            <div class="min_text namber">100</div>
+                        </div>
+                        <div class="footer_block_content">
+                            <div class="min_text">Специальности</div>
+                            <div class="min_text namber">100</div>
+                        </div>
+                        <div class="footer_block_content">
+                            <div class="min_text">Об университете</div>
+                            <div class="min_text namber">100</div>
+                        </div>
+                        <div class="footer_block_content">
+                            <div class="min_text">Контакты</div>
+                            <div class="min_text namber">100</div>
+                        </div>
+                    </div>
+                    <div class="footer_block2">
+                        <div class="zag">
+                            Основная информация
+                        </div>
+                        <div class="footer_block2_content">
+                            <div class="footer_block2_content_text">
+                                <div class="block_info">
+                                    <div  class="nam">4 532</div>
+                                    <span class="min_text">платных мест</span>
+                                </div>
+                                <div class="block_info">
+                                    <div class="nam">1 702</div>
+                                    <span class="min_text">бюджетных мест</span>
+                                </div>
+                            </div>
+                            <div class="footer_block2_content_text">
+                                <div class="block_info">
+                                    <div class="nam_text">1 место</div>
+                                    <span class="min_text">в Санкт-Петербурге</span>
+                                </div>
+                                <div class="block_info">
+                                    <div class="nam_text">12 место</div>
+                                    <span class="min_text">в РФ</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </footer>
         </div>
     </div>
