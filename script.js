@@ -1,21 +1,22 @@
-// async function hedscrol() {
-//   let url = 'https://proverili.ru/api/areas';
-//   let response = await fetch(url, { method: 'POST' });
-//   console.log(response.json())
-// }
-// hedscrol()
-
-
+//скролл-бар меню
+document.addEventListener('DOMContentLoaded', () => {
+  const navItems = document.querySelector('.nav-scroller__items');
+  const navItemActive = navItems.querySelector('.nav-scroller__item_active');
+  if (!navItemActive) {
+    return;
+  }
+  const navItemsRect = navItems.getBoundingClientRect();
+  const navItemActiveRect = navItemActive.getBoundingClientRect();
+  const navItemsLeft = navItemActiveRect.left - navItemsRect.left + (navItemActiveRect.width - navItemsRect.width) / 2;
+  navItems.scrollLeft = navItemsLeft;
+})
 
 //проверяет запрос
-async function getinput() {
+function getinput() {
     let input = document.getElementById("input");
     let filter = input.value.toUpperCase();
     let ul = document.getElementById("ul");
     let li = ul.getElementsByTagName("li");
-    let url = 'https://proverili.ru/api/areas';
-    let response = await fetch(url, { method: 'POST' });
-    console.log(response.json())
 
   for (let i = 0; i < li.length; i++) {
     let a = li[i].getElementsByTagName("a")[0];
@@ -32,15 +33,3 @@ async function getinput() {
 function show() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
-
-const scrollBtn = document.getElementById('scrollCaroosel');
-const toScrollMenu = document.querySelector('.caroosel__container');
-scrollBtn.addEventListener('click', () => {
-  toScrollMenu.classList.toggle('scroll')
-})
-
-// function addSelector(string, pos, len){
-//   return string.slice(0, pos) + '<mark>' + string.slice(pos, pos + len) + '</mark>' + string.slice(pos + len)
-// }
-
-//burger-menu
